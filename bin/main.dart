@@ -1,16 +1,18 @@
 import 'dart:io';
+import 'dart:collection';
 
 void main(List<String> arguments) {
 //inputan
- int number = int.parse(stdin.readLineSync()!);
+ //int number = int.parse(stdin.readLineSync()!);
+ //String kata = stdin.readLineSync()!;  //input string manual tapi kayaknya gabisa 
  //1. odd and even numbers use inputan
- 
+ /*
   if (number%2==0){
     print("Genap");
     }else{
       print("ganjil");
     } 
-    
+   */ 
 
 
   //2. grade form score use inputan
@@ -51,5 +53,7 @@ void main(List<String> arguments) {
   */
 
   //5.  remove duplicate letter in sentences.
-   
+  final myStrings = ['a', 'b', 'c', 'a', 'b', 'a'];
+  final uniqueStrings = myStrings.toSet().toList();
+  print(uniqueStrings); 
 }
